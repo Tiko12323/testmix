@@ -1,0 +1,46 @@
+.conteiner {
+    background-color: rgb(235, 232, 232);
+    width: 300px;
+    max-width: 25%;
+    height: 100vh;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
+.conteiner h2 {
+    color: gray;
+    font-size: 30px;
+}
+.conteiner input {
+    border: 0.5px solid rgb(214, 211, 211);
+    padding: 6px;
+    background: none;
+    border-radius: 8px;
+}
+.conteiner h3 {
+    color: gray;
+    font-size: 18px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.active_btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    background-color: blue;
+}
+.btn h4 {
+    color: gray;
+    font-size: 17px;
+}
+.pages_btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}

@@ -1,13 +1,47 @@
+import Header from "../components/Header/Header";
 import DefaultLayOut from "../layout/DefaultLayOut"
 import OutLayOut from "../layout/OutLayOut"
-
+import Calendary from "../pages/Calendary";
+import Home from "../pages/Home"
+import StickyWall from "../pages/StickyWall";
+import Today from "../pages/Today";
+import Upcoming from "../pages/Upcoming"
 const routesConfig = [
     {
+        path:'/header',
+        element:<Header />
+    },
+    {
         element: <DefaultLayOut />,
-        children: []
+        children: [
+            {
+                path: '/',
+                element: <Home />
+            }
+        ]
     },
     {
         element: <OutLayOut />,
-        children: []
+        children: [
+            
+            {
+                path: '/today',
+                element: <Today />
+            },
+            {
+                path: '/calendary',
+                element: <Calendary />
+            },
+            {
+                path: '/stickyWall',
+                element: <StickyWall />
+            },
+            {
+                path: '/upcoming',
+                element: <Upcoming />
+            },
+        ]
     }
 ]
+
+export default routesConfig;
