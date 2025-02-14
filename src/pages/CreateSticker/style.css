@@ -1,0 +1,30 @@
+.createSticker_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    width: 350px;
+}
+.title_input {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+}
+.info_input {
+    padding: 10px;
+    width: 250px;
+}
+.color_input {
+    padding: 10px;
+    width: 100px;
+}
+.done_btn {
+    padding: 10px;
+    background-color: rgb(4, 117, 4);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 50px;
+}

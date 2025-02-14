@@ -2,6 +2,7 @@ import Header from "../components/Header/Header";
 import DefaultLayOut from "../layout/DefaultLayOut"
 import OutLayOut from "../layout/OutLayOut"
 import Calendary from "../pages/Calendary";
+import CreateSticker from "../pages/CreateSticker";
 import Home from "../pages/Home"
 import StickyWall from "../pages/StickyWall";
 import Today from "../pages/Today";
@@ -18,6 +19,7 @@ const routesConfig = [
                 path: '/',
                 element: <Home />
             }
+            
         ]
     },
     {
@@ -40,6 +42,10 @@ const routesConfig = [
                 path: '/upcoming',
                 element: <Upcoming />
             },
+            {
+                path: '/createSticker',
+                element: <CreateSticker />
+            }
         ]
     }
 ]
