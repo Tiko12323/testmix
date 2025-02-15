@@ -31,3 +31,11 @@
     background-color: rgb(204, 202, 202);
     border: none;
 }
+.date_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}

@@ -13,17 +13,17 @@ function StickyWall() {
             <div className="all_stickers">
                 {
                     stickers?.map((item) => (
-                        <div key={item.id} className="sticker" style={{background: item.color}}>
-                            <h2>{item.title}</h2>
-                            <p>*{item.info1}</p>
-                            <p>*{item.info2}</p>
-                            <p>*{item.info3}</p>
-                            <p>*{item.info4}</p>
+                        <div key={item.id} className="sticker" style={{ background: item.color }}>
+                            <div className="date_title">
+                                <h2>{item.title}</h2>
+                                {item.data}
+                            </div>
+                            {item.info}
                         </div>
                     ))
                 }
-                <div onClick={()=>navigate('/createSticker')} className="add_sticker">
-                    <img src={plus} alt="dsad" width={'50px'} height={'50px'}/>
+                <div onClick={() => navigate('/createSticker')} className="add_sticker">
+                    <img src={plus} alt="dsad" width={'50px'} height={'50px'} />
                 </div>
             </div>
         </div>
